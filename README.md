@@ -1,19 +1,11 @@
 # Best practices for Discord bots
 
-*NB: These will probably only apply for bots on large servers and/or on a large
-number of servers. If your bot is specific to a small server, it doesn't at all
-matter what you do.* If you have an idea for something that should be added,
-please make a PR with your change! We can then discuss it there.
 
-1. **Don't make scraping bots**. Scraping bots are bots that look for invites
-   inside every message and then follow every invite they find, creating a sort
-   of virus that spreads across servers. The head Discord dev (Stanislav) has
-   stated that these bots are officially discouraged and there may be measures
-   added to prevent them.
+*NB: These guidelines are intended for bots running on public servers. If your bot is restricted to private ones, this document likely doesn't apply to you.*
 
-2. Consider **using highly unique prefixes** to trigger the bot. Common prefixes
-   used include `!`, `$` and `.` (avoid these especially). Examples of unique
-   prefixes are short words (`owl`), obscure Unicode characters not usually
-   found on keyboards (`¨`), and, perhaps the most unique, @mentions specific
-   to your bot. Additionally, if your bot is mainly a command-style bot, avoid
-   making it respond to things that aren't commands.
+1. **Commands should be explicitly invoked**. Bots should not activate on normal chat. Instead, use a command prefix or only respond when your bot is directly @mentioned.
+2. **Use unique prefixes**. Single-character prefixes such as `!`, `$` and `.` are commonplace for activating commands and lead to overlaps with other bots. Should you opt to use a prefix for your bot, consider using words (`owl`) or unique Unicode characters (`¨`).
+3. **Don't be greedy**. Restrict yourself to a small number of prefixes to reduce the risk of collision with others.
+4. **Don't scrape for invites**. Invite scraping, where a bot searches for invites and blindly joins other servers is officially discouraged by Discord. Should a bot be reported, it may be banned or otherwise restricted.
+
+If you have an idea for an addition or change to this document, please make a pull request and we can discuss it.
