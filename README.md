@@ -14,7 +14,7 @@ unique Unicode characters (`¨`).
 3. **Don't be greedy**. Restrict yourself to a small number of prefixes to 
 reduce the risk of collision with others.
 4. **Don't scrape for invites**. Invite scraping, where a bot searches for 
-invites and blindly joins other servers is officially discouraged by Discord. 
+invites and blindly joins other servers, is officially discouraged by Discord. 
 Should a bot be reported, it may be banned or otherwise restricted.
 
 If you have an idea for an addition or change to this document, please make a 
