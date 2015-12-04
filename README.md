@@ -16,7 +16,7 @@ reduce the risk of collision with others.
 4. **Don't scrape for invites**. Invite scraping, where a bot searches for 
 invites and blindly joins other servers, is officially discouraged by Discord. 
 Should a bot be reported, it may be banned or otherwise restricted.
-5. **Don't overuse mentions**. If you reply directly to a command, dont use a
+5. **Don't overuse mentions**. If you reply directly to a command, don't use a
 mention, they can lead to bot reply loops. Mentions are fine if a long running 
 command is executed, but private messages are a good alternative.
 
