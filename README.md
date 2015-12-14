@@ -19,7 +19,7 @@ Should a bot be reported, it may be banned or otherwise restricted.
 5. **Don't overuse mentions**. If you reply directly to a command, don't use a
 mention, they can lead to bot reply loops. Mentions are fine if a long running 
 command is executed, but private messages are a good alternative.
-6. **Don't have bots reply with "invalid command"**. If a user uses a command wrong or the command does not exist, then let it fail silently. Do not have it reply with something like "invalid command". Though if the command is correct, but arguments are wrong then it's okay to reply with "invalid args". The reason for this is if the bot is in more than 1 server and there's another bot and they have conflicting prefixes it becomes a problem as it's annoying.
+6. **Don't reply with "invalid command"**. If a user uses a command wrong or the command does not exist, then let it fail silently. Do not have it reply with something like "invalid command". Though if the command is correct, but arguments are wrong then it's okay to reply with "invalid args". The reason for this is if the bot is in more than 1 server and there's another bot and they have conflicting prefixes it becomes a problem as it's annoying.
 
 If you have an idea for an addition or change to this document, please make a 
 pull request and we can discuss it.
