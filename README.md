@@ -21,8 +21,7 @@ mention, they can lead to bot reply loops. Mentions are fine if a long running
 command is executed, but private messages are a good alternative.
 6. **Have an `info` command**. It should provide information about the bot
 such as what framework it is using and the used version, `help` commands and,
-most importantly, who made it. Be sure to have it triggered in a unique way
-(see 2.) so one command doesn't trigger multiple bots.
+most importantly, who made it.
 
 If you have an idea for an addition or change to this document, please make a 
 pull request and we can discuss it.
