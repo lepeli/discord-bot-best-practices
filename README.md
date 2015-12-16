@@ -19,6 +19,9 @@ Should a bot be reported, it may be banned or otherwise restricted.
 5. **Don't overuse mentions**. If you reply directly to a command, don't use a
 mention, they can lead to bot reply loops. Mentions are fine if a long running 
 command is executed, but private messages are a good alternative.
+6. **Have an `info` command**. It should provide information about the bot
+such as what framework it is using and the used version, `help` commands and,
+most importantly, who made it.
 
 If you have an idea for an addition or change to this document, please make a 
 pull request and we can discuss it.
