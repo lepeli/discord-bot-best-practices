@@ -22,7 +22,12 @@ command is executed, but private messages are a good alternative.
 6. **Have an `info` command**. It should provide information about the bot
 such as what framework it is using and the used version, `help` commands and,
 most importantly, who made it.
-7. **Don't reply with "invalid command"**. If a user uses a command that does not exist, then let it fail silently. Do not have it reply with something like "invalid command". Though if the command is correct, but arguments are wrong then it's okay to reply with "invalid args". The reason for this is if the bot is in more than 1 server and there's another bot and they have conflicting prefixes it becomes a problem as it's annoying.
+7. **Don't reply with "invalid command"**. If a user uses a command that does
+not exist, then let it fail silently. Do not have it reply with something like
+"invalid command". Though if the command is correct, but arguments are wrong
+then it's okay to reply with "invalid args". The reason for this is if the bot
+is in more than 1 server and there's another bot and they have conflicting
+prefixes it becomes a problem as it's annoying.
 
 If you have an idea for an addition or change to this document, please make a
 pull request and we can discuss it.
