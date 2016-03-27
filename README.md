@@ -33,6 +33,8 @@ prefixes it becomes a problem as it's annoying.
 API ruin things for everyone. Make sure to factor in rate-limiting and backoff
 in your bot code, and be intelligent about using the API. Make sure to ask for
 help if you're unsure about the right way to implement things.
+9. **Ignore your own messages**. This helps prevent infinite self-loops and
+potential security exploits.
 
 If you have an idea for an addition or change to this document, please make a
 pull request and we can discuss it.
