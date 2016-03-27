@@ -20,16 +20,20 @@ alternative could be having a specific command that joins invites.)
 5. **Don't overuse mentions**. If you reply directly to a command, don't use a
 mention, they can lead to bot reply loops. Mentions are fine if a long running
 command is executed, but private messages are a good alternative.
-6. **Have an `info` command**. It should provide information about the bot
+6. **Don't make the bot listen to its own messages**. If a bot has a command
+that allows arbitrary output, and then somebody uses that command to trigger
+itself again, an infinite loop can be created, which is unnecessary and
+spammy.
+7. **Have an `info` command**. It should provide information about the bot
 such as what framework it is using and the used version, `help` commands and,
 most importantly, who made it.
-7. **Don't reply with "invalid command"**. If a user uses a command that does
+8. **Don't reply with "invalid command"**. If a user uses a command that does
 not exist, then let it fail silently. Do not have it reply with something like
 "invalid command". Though if the command is correct, but arguments are wrong
 then it's okay to reply with "invalid args". The reason for this is if the bot
 is in more than 1 server and there's another bot and they have conflicting
 prefixes it becomes a problem as it's annoying.
-8. **Be respectful of Discord's API**. Bots that abuse and misuse the Discord
+9. **Be respectful of Discord's API**. Bots that abuse and misuse the Discord
 API ruin things for everyone. Make sure to factor in rate-limiting and backoff
 in your bot code, and be intelligent about using the API. Make sure to ask for
 help if you're unsure about the right way to implement things.
