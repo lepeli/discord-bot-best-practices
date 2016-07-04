@@ -10,7 +10,8 @@ directly @mentioned.
 2. **Use unique prefixes**. Single-character prefixes such as `!`, `$` and `.`
 are commonplace for activating commands and lead to overlaps with other bots.
 Should you opt to use a prefix for your bot, consider using words (`owl`) or
-unique Unicode characters (`¨`).
+unique Unicode characters (`¨`). Also, you should avoid using `#` or `@` as
+prefixes since they can be used to mention a channel or a member.
 3. **Don't be greedy**. Restrict yourself to a small number of prefixes to
 reduce the risk of collision with others.
 4. **Don't overuse mentions**. If you reply directly to a command, don't use a
