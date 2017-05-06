@@ -34,6 +34,8 @@ help if you're unsure about the right way to implement things.
 self-loops and potential security exploits. Using a zero width space such as `\u200B`
 and `\u180E` in the beginning of each message also prevents your bot from
 triggering other bots' commands.
+9. **Keep NSFW features locked to NSFW channels**
+All NSFW commands/features should only work in (Discord) NSFW-marked channels.
 
 If you have an idea for an addition or change to this document, please make a
 pull request and we can discuss it.
