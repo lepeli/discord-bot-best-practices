@@ -12,6 +12,9 @@ are commonplace for activating commands and lead to overlaps with other bots.
 Should you opt to use a prefix for your bot, consider using words (`owl`) or
 unique Unicode characters (`¨`). Also, you should avoid using `#` or `@` as
 prefixes since they can be used to mention a channel or a member.
+Ideally, your bot's prefix should be configurable on a server-by-server
+basis, so that the server owners can ensure every bot has its own unique
+prefix of their choice.
 3. **Don't be greedy**. Restrict yourself to a small number of prefixes to
 reduce the risk of collision with others.
 4. **Don't overuse mentions**. If you reply directly to a command, don't use a
@@ -23,9 +26,9 @@ most importantly, who made it.
 6. **Don't reply with "invalid command"**. If a user uses a command that does
 not exist, then let it fail silently. Do not have it reply with something like
 "invalid command". Though if the command is correct, but arguments are wrong
-then it's okay to reply with "invalid args". The reason for this is if the bot
-is in more than 1 server and there's another bot and they have conflicting
-prefixes it becomes a problem as it's annoying.
+then it's okay to reply with "invalid args". If there is more than one bot in
+a server that share a prefix, this can result in very obnoxious usage.
+If your bot's prefix is configurable, this rule can probably be safely disregarded.
 7. **Be respectful of Discord's API**. Bots that abuse and misuse the Discord
 API ruin things for everyone. Make sure to factor in rate-limiting and backoff
 in your bot code, and be intelligent about using the API. Make sure to ask for
@@ -33,7 +36,9 @@ help if you're unsure about the right way to implement things.
 8. **Ignore both your own and other bots' messages**. This helps prevent infinite
 self-loops and potential security exploits. Using a zero width space such as `\u200B`
 and `\u180E` in the beginning of each message also prevents your bot from
-triggering other bots' commands.
+triggering other bots' commands. The Discord API also tells you if a user is a bot
+(`bot` property on `User` objects -
+[see the reference](https://discordapp.com/developers/docs/resources/user#user-object)).
 9. **Keep NSFW features locked to NSFW channels**
 All NSFW commands/features should only work in (Discord) NSFW-marked channels.
 
