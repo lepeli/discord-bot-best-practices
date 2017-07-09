@@ -39,8 +39,9 @@ and `\u180E` in the beginning of each message also prevents your bot from
 triggering other bots' commands. The Discord API also tells you if a user is a bot
 (`bot` property on `User` objects -
 [see the reference](https://discordapp.com/developers/docs/resources/user#user-object)).
-9. **Keep NSFW features locked to NSFW channels**
+9. **Keep NSFW features locked to NSFW channels**.
 All NSFW commands/features should only work in (Discord) NSFW-marked channels.
-
+10. **Don't make a public eval command**.
+Don't let people run code freely on your machine. Peoples can exploit and do everything on your machine.
 If you have an idea for an addition or change to this document, please make a
 pull request and we can discuss it.
